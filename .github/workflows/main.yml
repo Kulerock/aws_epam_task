@@ -24,8 +24,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
   
-      - name: Install Pandoc and pdflatex
-        run: sudo apt update && sudo apt install -y pandoc texlive-latex-base
+      - name: Install Pandoc and LaTeX dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y pandoc texlive texlive-latex-extra texlive-xetex
   
       - name: Convert README.md to PDF
         run: pandoc --from markdown --to pdf README.md -o README.pdf
@@ -35,6 +37,7 @@ jobs:
         with:
           name: README.pdf
           path: README.pdf
+
 
 
   
