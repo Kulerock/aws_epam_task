@@ -1,6 +1,6 @@
 # My website published in S3 AWS
 ![image](https://github.com/user-attachments/assets/2ad3f639-a204-425b-96c8-c1c46b26950f)
-My 2023 CV via AWS [link]()
+My 2023 CV via AWS [link](https://old-cv-kulerock.s3.eu-north-1.amazonaws.com/index.html)
 
 ## How to do it?
 
@@ -16,9 +16,11 @@ I already have a free account and I can start doing tasks.
 
 I moved to the IAM service, chose the option "create new", and added full s3 permissions
 
-#### Step 2: Creating S3 bucket with public access
+#### Step 2: Creating S3 bucket with public access + policy
 ![image](https://github.com/user-attachments/assets/533b9205-3529-4e4e-a2ad-7d779be354ea)
 ![image](https://github.com/user-attachments/assets/e3932697-ba41-40ec-af79-179f102646b0)
+![image](https://github.com/user-attachments/assets/a778d400-85b3-4792-ac55-5071ebc3629d)
+
 
 #### Step 3: Added Access Key to the user
 ![image](https://github.com/user-attachments/assets/e87b57dd-721f-4303-90f6-a3ca076544c7)
@@ -30,6 +32,13 @@ I moved to the IAM service, chose the option "create new", and added full s3 per
 #### Step 5: Adding Workflow (GitHub Action)
 ![image](https://github.com/user-attachments/assets/e8bba122-0fb7-429e-9c02-5aadb8031a36)
 ![image](https://github.com/user-attachments/assets/51fe7d07-55a3-4a26-b25d-a285fa2bbf80)
+
+#### Step 6: Running GitHub Action (automatically by commits in main)
+![image](https://github.com/user-attachments/assets/db478da4-c95e-4d1b-a7de-b31a5ff2d92f)
+
+#### Step 7: Checked results
+![image](https://github.com/user-attachments/assets/68c6444b-0db5-46ae-9335-dd6590eba007)
+
 
 
 
