@@ -21,6 +21,7 @@ I created a dedicated IAM user in AWS with permissions for S3. This user will se
 
 ![image](https://github.com/user-attachments/assets/4e8cc0db-c7bc-46ec-a633-dea9dac9f1b5)
 ![image](https://github.com/user-attachments/assets/624945d2-71d3-479a-86db-c02831ba2153)
+![image](https://github.com/user-attachments/assets/e87b57dd-721f-4303-90f6-a3ca076544c7)
 
 #### Step 3: Configuring an S3 Bucket with Public Access
 
@@ -41,8 +42,8 @@ In GitHub, I added the AWS access keys as secrets to connect my GitHub Actions t
 
 - **Go to GitHub Settings:** Open the repository, go to Settings > Secrets and variables > Actions.
 - **Add Secrets:** Create two secrets, `AWS_ROLE_ACCESS_KEY` and `AWS_ROLE_SECRET_KEY`, and paste in the values from IAM.
-
-![image](https://github.com/user-attachments/assets/e87b57dd-721f-4303-90f6-a3ca076544c7)
+![image](https://github.com/user-attachments/assets/27754c1a-9100-423c-9777-2ed5162623d8)
+![image](https://github.com/user-attachments/assets/5e78e018-23e3-45b2-b114-28aee5e70294)
 
 ### Step 5: Creating a GitHub Workflow for Automatic Deployment
 
@@ -50,9 +51,7 @@ Using GitHub Actions, I created a workflow to automatically upload files to S3 w
 
 - **Set Up Workflow:** Go to Actions in your repository, choose "New workflow," and select "set up a workflow yourself."
 - **Configure Script:** Add the script to specify the workflow steps, including checking out the repository and uploading files to S3.
-
-![image](https://github.com/user-attachments/assets/27754c1a-9100-423c-9777-2ed5162623d8)
-![image](https://github.com/user-attachments/assets/5e78e018-23e3-45b2-b114-28aee5e70294)
+- 
 ![image](https://github.com/user-attachments/assets/e8bba122-0fb7-429e-9c02-5aadb8031a36)
 
 **Add this code:**
