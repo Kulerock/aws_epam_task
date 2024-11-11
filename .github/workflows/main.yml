@@ -18,5 +18,21 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ROLE_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_ROLE_SECRET_KEY }}
           SOURCE_DIR: ./CV
+  readme-to-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+  
+      - name: Install Pandoc
+        run: sudo apt update && sudo apt install -y pandoc
+  
+      - name: Convert README.md to PDF
+        run: pandoc --from markdown --to pdf README.md -o README.pdf
+  
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: README.pdf
+          path: README.pdf
 
   
