@@ -1,5 +1,5 @@
 # My website published in S3 AWS
-![image](https://github.com/user-attachments/assets/2ad3f639-a204-425b-96c8-c1c46b26950f){ width=60% }
+![image](https://github.com/user-attachments/assets/2ad3f639-a204-425b-96c8-c1c46b26950f)
 
 My 2023 CV via AWS [link](https://old-cv-kulerock.s3.eu-north-1.amazonaws.com/index.html)
 
