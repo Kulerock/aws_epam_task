@@ -20,11 +20,12 @@ jobs:
           SOURCE_DIR: ./CV
   readme-to-pdf:
     runs-on: ubuntu-latest
+  
     steps:
       - uses: actions/checkout@v4
   
-      - name: Install Pandoc
-        run: sudo apt update && sudo apt install -y pandoc
+      - name: Install Pandoc and pdflatex
+        run: sudo apt update && sudo apt install -y pandoc texlive-latex-base
   
       - name: Convert README.md to PDF
         run: pandoc --from markdown --to pdf README.md -o README.pdf
@@ -34,5 +35,6 @@ jobs:
         with:
           name: README.pdf
           path: README.pdf
+
 
   
