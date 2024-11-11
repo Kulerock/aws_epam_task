@@ -51,6 +51,11 @@ Using GitHub Actions, I created a workflow to automatically upload files to S3 w
 - **Set Up Workflow:** Go to Actions in your repository, choose "New workflow," and select "set up a workflow yourself."
 - **Configure Script:** Add the script to specify the workflow steps, including checking out the repository and uploading files to S3.
 
+![image](https://github.com/user-attachments/assets/27754c1a-9100-423c-9777-2ed5162623d8)
+![image](https://github.com/user-attachments/assets/5e78e018-23e3-45b2-b114-28aee5e70294)
+![image](https://github.com/user-attachments/assets/e8bba122-0fb7-429e-9c02-5aadb8031a36)
+
+**Add this code:**
 ```yaml
 name: Upload Website
 
@@ -74,21 +79,22 @@ jobs:
           SOURCE_DIR: ./main
 ```
 
-![image](https://github.com/user-attachments/assets/27754c1a-9100-423c-9777-2ed5162623d8)
-![image](https://github.com/user-attachments/assets/5e78e018-23e3-45b2-b114-28aee5e70294)
+### Step 6: Running GitHub Action to Deploy
 
-#### Step 5: Adding Workflow (GitHub Action)
+With each push to the main branch, the GitHub Action automatically deploys updates to my S3 bucket.
 
-![image](https://github.com/user-attachments/assets/e8bba122-0fb7-429e-9c02-5aadb8031a36)
-![image](https://github.com/user-attachments/assets/51fe7d07-55a3-4a26-b25d-a285fa2bbf80)
-
-#### Step 6: Running GitHub Action (automatically by commits in main)
+- **Commit Changes:** Each commit to the `main` branch triggers the deployment workflow.
+- **Monitor Workflow:** Go to the **Actions** tab in GitHub to monitor the workflow’s progress and ensure the successful deployment.
+- 
 ![image](https://github.com/user-attachments/assets/db478da4-c95e-4d1b-a7de-b31a5ff2d92f)
 
-#### Step 7: Checked results
+### Step 7: Verifying the Deployment
+
+Finally, I checked the S3 bucket to ensure the website files were deployed successfully and accessible via the S3 URL.
+
 ![image](https://github.com/user-attachments/assets/68c6444b-0db5-46ae-9335-dd6590eba007)
 
-
+And that’s it! My website is now live, hosted securely on AWS S3.
 
 
 
